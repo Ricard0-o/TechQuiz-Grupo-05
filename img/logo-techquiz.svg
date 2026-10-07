@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img">
+  <title>Ícone do TechQuiz</title>
+  <rect width="64" height="64" rx="14" fill="#2ec4c7"/>
+  <path d="M18 18h28v20H34l-8 8v-8h-8V18Z" fill="#071a33"/>
+  <path d="M28 25a5 5 0 0 1 10 0c0 4-5 4-5 8" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="33" cy="36" r="2" fill="#fff"/>
+</svg>

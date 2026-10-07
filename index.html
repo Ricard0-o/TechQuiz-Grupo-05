@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quiz acessível sobre fundamentos de desenvolvimento front-end.">
+  <title>TechQuiz | Fundamentos de Front-End</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="atalho-conteudo" href="#conteudo-principal">Ir para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container marca">
+      <img src="img/logo-techquiz.svg" alt="" width="56" height="56">
+      <div>
+        <p class="rotulo">Grupo 05 apresenta</p>
+        <h1>TechQuiz</h1>
+        <p>Fundamentos de Desenvolvimento Front-End</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo-principal" class="container conteudo">
+    <noscript>
+      <p class="aviso">Ative o JavaScript no navegador para responder ao quiz.</p>
+    </noscript>
+
+    <section id="tela-inicial" class="painel" aria-labelledby="titulo-inicio">
+      <div class="introducao">
+        <p class="etiqueta">10 perguntas · resultado imediato</p>
+        <h2 id="titulo-inicio">Teste seus conhecimentos de front-end</h2>
+        <p>Responda questões de HTML, CSS, JavaScript, responsividade e acessibilidade. Depois de cada resposta, você verá uma explicação e a fonte usada.</p>
+
+        <form id="form-inicio" class="formulario">
+          <label for="nome-jogador">Qual é o seu nome?</label>
+          <input id="nome-jogador" name="nome" type="text" minlength="2" maxlength="40" autocomplete="name" required>
+          <p id="ajuda-nome" class="texto-apoio">Digite de 2 a 40 caracteres.</p>
+          <button class="botao botao-primario" type="submit">Começar o quiz</button>
+        </form>
+
+        <p id="erro-carregamento" class="aviso" role="alert" hidden></p>
+      </div>
+
+      <aside class="ranking" aria-labelledby="titulo-ranking-inicial">
+        <h2 id="titulo-ranking-inicial">Ranking desta sessão</h2>
+        <ol id="ranking-inicial" class="lista-ranking">
+          <li>Nenhuma partida concluída ainda.</li>
+        </ol>
+      </aside>
+    </section>
+
+    <section id="tela-quiz" class="painel painel-quiz" aria-labelledby="pergunta-titulo" hidden>
+      <div class="status-quiz">
+        <p id="progresso-texto">Pergunta 1 de 10</p>
+        <p id="pontuacao-atual">Acertos: 0</p>
+      </div>
+      <progress id="barra-progresso" value="1" max="10">1 de 10</progress>
+
+      <p id="categoria-pergunta" class="etiqueta"></p>
+      <h2 id="pergunta-titulo" tabindex="-1"></h2>
+      <div id="alternativas" class="alternativas" role="group" aria-labelledby="pergunta-titulo"></div>
+
+      <div id="feedback" class="feedback" aria-live="polite" aria-atomic="true" hidden>
+        <h3 id="feedback-titulo"></h3>
+        <p id="feedback-explicacao"></p>
+        <a id="feedback-fonte" href="#" target="_blank" rel="noopener noreferrer">Consultar fonte da resposta</a>
+      </div>
+
+      <button id="botao-proxima" class="botao botao-primario" type="button" hidden>Próxima pergunta</button>
+    </section>
+
+    <section id="tela-resultado" class="painel resultado" aria-labelledby="titulo-resultado" hidden>
+      <p class="etiqueta">Partida concluída</p>
+      <h2 id="titulo-resultado" tabindex="-1">Seu resultado</h2>
+      <p id="mensagem-resultado" class="placar-final"></p>
+      <p id="resumo-resultado"></p>
+
+      <div class="acoes-resultado">
+        <button id="jogar-novamente" class="botao botao-primario" type="button">Jogar novamente</button>
+        <button id="trocar-jogador" class="botao botao-secundario" type="button">Trocar jogador</button>
+      </div>
+
+      <div class="ranking ranking-resultado" aria-labelledby="titulo-ranking-final">
+        <h3 id="titulo-ranking-final">Ranking desta sessão</h3>
+        <ol id="ranking-final" class="lista-ranking"></ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>TechQuiz · Trabalho Final de Desenvolvimento Front-End Para Web · Grupo 05</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js" defer></script>
+</body>
+</html>
