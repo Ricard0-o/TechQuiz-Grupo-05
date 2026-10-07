@@ -2,6 +2,9 @@
 
 Aplicação web de perguntas e respostas sobre **Fundamentos de Desenvolvimento Front-End**, criada para o Trabalho Final da disciplina Desenvolvimento Front-End Para Web.
 
+- **Repositório:** https://github.com/Ricard0-o/TechQuiz-Grupo-05
+- **Site publicado:** https://ricard0-o.github.io/TechQuiz-Grupo-05/
+
 ## Funcionalidades
 
 - 10 perguntas carregadas de `perguntas.json` com `fetch`;
@@ -20,8 +23,6 @@ Por usar `fetch`, o projeto deve ser aberto por um servidor HTTP, e não diretam
 1. Baixe ou clone este repositório.
 2. Na pasta do projeto, inicie um servidor local. Exemplo: `python -m http.server 8000`.
 3. Acesse `http://localhost:8000` no navegador.
-
-Depois da publicação, o endereço do GitHub Pages será incluído aqui.
 
 ## Estrutura
 
