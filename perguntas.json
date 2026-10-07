@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "categoria": "HTML",
+    "pergunta": "Qual elemento semântico representa o conteúdo principal e exclusivo de uma página?",
+    "alternativas": ["<header>", "<main>", "<aside>", "<footer>"],
+    "correta": 1,
+    "explicacao": "O elemento <main> reúne o conteúdo dominante da página, que está diretamente relacionado ao seu tema central.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/main"
+  },
+  {
+    "id": 2,
+    "categoria": "CSS",
+    "pergunta": "Qual recurso do CSS organiza elementos em linhas e colunas ao mesmo tempo?",
+    "alternativas": ["CSS Grid", "Float", "Position fixed", "Text align"],
+    "correta": 0,
+    "explicacao": "CSS Grid é um sistema bidimensional: ele controla linhas e colunas para montar layouts.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guides/Grid_layout"
+  },
+  {
+    "id": 3,
+    "categoria": "CSS",
+    "pergunta": "Em qual situação Flexbox costuma ser mais indicado?",
+    "alternativas": ["Editar imagens", "Validar formulários", "Alinhar itens em uma dimensão", "Armazenar dados"],
+    "correta": 2,
+    "explicacao": "Flexbox foi pensado para distribuir e alinhar itens principalmente em uma dimensão: linha ou coluna.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guides/Flexible_box_layout"
+  },
+  {
+    "id": 4,
+    "categoria": "JavaScript",
+    "pergunta": "Para que a função fetch() é usada neste projeto?",
+    "alternativas": ["Colorir botões", "Buscar o arquivo de perguntas", "Criar o rodapé", "Definir a fonte do texto"],
+    "correta": 1,
+    "explicacao": "A Fetch API faz uma requisição e permite carregar recursos, como o arquivo perguntas.json.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch"
+  },
+  {
+    "id": 5,
+    "categoria": "JavaScript",
+    "pergunta": "O que acontece com os dados salvos no sessionStorage?",
+    "alternativas": ["São públicos na internet", "Ficam no servidor para sempre", "Duram durante a sessão da aba", "Viraram um arquivo CSS"],
+    "correta": 2,
+    "explicacao": "O sessionStorage guarda dados para a sessão da página e os separa por aba do navegador.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/API/Window/sessionStorage"
+  },
+  {
+    "id": 6,
+    "categoria": "JavaScript",
+    "pergunta": "Qual é a função de addEventListener() em uma página?",
+    "alternativas": ["Observar eventos e executar uma função", "Criar uma planilha", "Compactar imagens", "Esconder o HTML do navegador"],
+    "correta": 0,
+    "explicacao": "addEventListener() registra uma função que será executada quando um evento, como clique ou envio de formulário, acontecer.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener"
+  },
+  {
+    "id": 7,
+    "categoria": "Acessibilidade",
+    "pergunta": "Por que o foco visível é importante para a acessibilidade?",
+    "alternativas": ["Aumenta a velocidade da internet", "Mostra onde o usuário do teclado está", "Troca o idioma do site", "Salva o ranking"],
+    "correta": 1,
+    "explicacao": "O indicador de foco permite que pessoas que navegam por teclado saibam qual componente receberá a próxima ação.",
+    "fonte": "https://www.w3.org/WAI/WCAG22/Understanding/focus-visible"
+  },
+  {
+    "id": 8,
+    "categoria": "Responsividade",
+    "pergunta": "Qual mecanismo aplica estilos de acordo com características como a largura da tela?",
+    "alternativas": ["Comentários HTML", "Media queries", "sessionStorage", "Atributo alt"],
+    "correta": 1,
+    "explicacao": "Media queries permitem aplicar regras CSS quando condições do dispositivo ou da janela são atendidas.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/CSS_layout/Responsive_Design"
+  },
+  {
+    "id": 9,
+    "categoria": "JSON",
+    "pergunta": "Qual alternativa descreve corretamente um arquivo JSON?",
+    "alternativas": ["Um formato textual para representar dados", "Uma linguagem que substitui o HTML", "Um editor de imagens", "Uma regra de acessibilidade"],
+    "correta": 0,
+    "explicacao": "JSON é um formato de texto usado para representar dados estruturados por meio de objetos e listas.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/JSON"
+  },
+  {
+    "id": 10,
+    "categoria": "DOM",
+    "pergunta": "O que document.querySelector() retorna quando encontra correspondência?",
+    "alternativas": ["Todos os arquivos do site", "A primeira página do navegador", "O primeiro elemento que combina com o seletor", "Uma nova aba"],
+    "correta": 2,
+    "explicacao": "querySelector() retorna o primeiro elemento do documento que corresponde ao seletor CSS informado.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/API/Document/querySelector"
+  }
+]
