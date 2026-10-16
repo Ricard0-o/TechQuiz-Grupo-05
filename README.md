@@ -48,7 +48,7 @@ TechQuiz-Grupo-05/
 
 | Integrante | Responsabilidade registrada |
 | --- | --- |
-| Ricardo Nelber Nascimento Junior | Coordenação, análise dos requisitos, implementação de HTML, CSS, JavaScript e JSON, integração, testes e documentação. |
+| Ricardo Nelber Nascimento Junior | Análise dos requisitos, implementação de HTML, CSS, JavaScript e JSON, integração, testes e documentação. |
 | Daniel Ares Gontijo Pinto | Revisão de conteúdo e apoio à apresentação — participação a confirmar pelo integrante. |
 | Ricardo Oliveira da Silva | Teste responsivo em diferentes telas — participação a confirmar pelo integrante. |
 | Clara Puerta Lopes da Purificação | Revisão de acessibilidade e navegação por teclado — participação a confirmar pela integrante. |
