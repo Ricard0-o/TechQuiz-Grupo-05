@@ -11,10 +11,11 @@ Este documento registra atividades realmente executadas. Participações futuras
 | 07/10/2026 | Ricardo Nelber Nascimento Junior | Elaboração das 10 perguntas, explicações e referências no JSON. | Concluída |
 | 07/10/2026 | Ricardo Nelber Nascimento Junior | Implementação da lógica do quiz, pontuação, retorno e ranking em `sessionStorage`. | Concluída |
 | 07/10/2026 | Ricardo Nelber Nascimento Junior | Testes funcionais, responsivos e de integridade dos arquivos. | Concluída |
-| A definir | Daniel Ares Gontijo Pinto | Revisar a clareza do conteúdo, registrar apontamentos e preparar sua parte da apresentação. | Pendente de realização ou confirmação |
-| A definir | Ricardo Oliveira da Silva | Testar o layout em celular, tablet e computador; registrar larguras, rolagem horizontal, legibilidade e problemas. | Pendente de realização ou confirmação |
-| A definir | Clara Puerta Lopes da Purificação | Testar navegação por teclado, foco visível, retorno das respostas e identificação das alternativas; registrar um checklist. | Pendente de realização ou confirmação |
-| A definir | Pablo Henrique Silva Gomes | Conferir as dez perguntas, respostas, explicações e fontes; executar uma partida completa e registrar o resultado. | Pendente de realização ou confirmação |
+| A definir | Ricardo Nelber Nascimento Junior | Integrar as contribuições, corrigir problemas e preparar o documento Word. | Pendente |
+| A definir | Daniel Ares Gontijo Pinto | Revisar os textos do quiz e preparar sua parte da apresentação. | Pendente |
+| A definir | Ricardo Oliveira da Silva | Testar o site em diferentes telas, ajustar o CSS e registrar os testes. | Pendente |
+| A definir | Clara Puerta Lopes da Purificação | Testar a acessibilidade, corrigir problemas e registrar um checklist. | Pendente |
+| A definir | Pablo Henrique Silva Gomes | Revisar perguntas e fontes, testar o quiz e registrar os resultados. | Pendente |
 
 ## Perfis GitHub informados
 
