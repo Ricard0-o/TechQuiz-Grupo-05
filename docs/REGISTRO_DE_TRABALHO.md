@@ -27,7 +27,7 @@ Este documento registra atividades realmente executadas. Participações futuras
 | Clara Puerta Lopes da Purificação | [Phgomes05](https://github.com/Phgomes05)¹ |
 | Pablo Henrique Silva Gomes | [Phgomes05](https://github.com/Phgomes05)¹ |
 
-¹ O mesmo link foi fornecido para Pablo e Clara. Confirmar se Clara possui um perfil próprio antes de atribuir a ela commits ou atividade nessa conta.
+¹ Clara e Pablo usam o mesmo perfil GitHub, `Phgomes05`. No registro de trabalho, indicar quem realizou cada atividade; um commit dessa conta compartilhada, sozinho, não identifica qual dos dois fez a alteração.
 
 ## Critério de atualização
 
