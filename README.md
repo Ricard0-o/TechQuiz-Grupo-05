@@ -46,17 +46,19 @@ TechQuiz-Grupo-05/
 
 ## Integrantes e divisão de tarefas
 
-| Integrante | GitHub informado | Tarefa | Entrega esperada | Situação |
-| --- | --- | --- | --- | --- |
-| Ricardo Nelber Nascimento Junior | [Ricard0-o](https://github.com/Ricard0-o) | Analisar os requisitos, implementar HTML, CSS, JavaScript e JSON, integrar, testar e documentar. | Código, documentação e testes já registrados no histórico do projeto. | Implementação registrada |
-| Daniel Ares Gontijo Pinto | [danielareses0806](https://github.com/danielareses0806) | Revisar a clareza do conteúdo e preparar sua parte da apresentação. | Apontamentos de revisão e roteiro ou demonstração da parte apresentada. | Pendente de realização ou confirmação |
-| Ricardo Oliveira da Silva | [ro213377-sys](https://github.com/ro213377-sys) | Testar o layout em celular, tablet e computador, incluindo rolagem horizontal e legibilidade. | Registro das larguras e dispositivos testados, problemas encontrados e correções sugeridas. | Pendente de realização ou confirmação |
-| Clara Puerta Lopes da Purificação | [Phgomes05](https://github.com/Phgomes05)¹ | Revisar o uso por teclado, foco visível, leitura do retorno e identificação das alternativas. | Checklist de acessibilidade com resultados e problemas encontrados. | Pendente de realização ou confirmação |
-| Pablo Henrique Silva Gomes | [Phgomes05](https://github.com/Phgomes05)¹ | Conferir as dez perguntas, respostas, explicações e fontes; executar uma partida final. | Lista de questões revisadas e resultado da validação final. | Pendente de realização ou confirmação |
+A implementação inicial foi registrada em commits de Ricardo. As tarefas abaixo ampliam a participação do grupo a partir desta etapa; cada integrante deve realizar e registrar sua própria contribuição.
 
-¹ O mesmo endereço de GitHub foi informado para Pablo e Clara. A associação de uma conta individual à Clara precisa ser confirmada; este link não comprova autoria de trabalho dela.
+| Integrante | GitHub informado | Trabalho registrado até agora | Próximas tarefas e entrega verificável |
+| --- | --- | --- | --- |
+| Ricardo Nelber Nascimento Junior | [Ricard0-o](https://github.com/Ricard0-o) | Requisitos, estrutura, interface, perguntas iniciais, lógica, testes e documentação conforme o [registro](docs/REGISTRO_DE_TRABALHO.md) e o histórico Git. | Integrar as contribuições, corrigir problemas apontados pelo grupo, validar a publicação e preparar o documento Word técnico previsto no projeto. |
+| Daniel Ares Gontijo Pinto | [danielareses0806](https://github.com/danielareses0806) | Sem atividade concluída registrada. | Revisar clareza e precisão dos textos da introdução e explicações; atualizar `index.html` e/ou `perguntas.json` quando necessário; desenvolver sua parte do roteiro em `docs/GUIA_APRESENTACAO.md`. Entregar alterações ou apontamentos concretos. |
+| Ricardo Oliveira da Silva | [ro213377-sys](https://github.com/ro213377-sys) | Sem atividade concluída registrada. | Testar o layout em celular, tablet e computador; corrigir no `css/estilos.css` problemas de largura, legibilidade e disposição; documentar dispositivos, larguras, resultados e correções em `docs/RELATORIO_TESTES.md`. |
+| Clara Puerta Lopes da Purificação | Perfil individual a confirmar¹ | Sem atividade concluída registrada. | Testar navegação por teclado e leitor de tela, foco, nomes acessíveis e retorno das respostas; propor ou implementar ajustes em `index.html`, `css/estilos.css` e `js/scripts.js`; acrescentar checklist e resultados ao relatório de testes. |
+| Pablo Henrique Silva Gomes | [Phgomes05](https://github.com/Phgomes05) | Sem atividade concluída registrada. | Revisar as dez perguntas, alternativas, respostas, explicações e links em `perguntas.json`; corrigir inconsistências; testar fluxos de acerto, erro, reinício e ranking; registrar casos e resultados em `docs/RELATORIO_TESTES.md`. |
 
-As tarefas pendentes são uma divisão proposta. Atualize o [registro de trabalho](docs/REGISTRO_DE_TRABALHO.md) com a data e o resultado somente depois da execução. O histórico Git deve identificar quem realmente fez cada alteração; não crie commits em nome de outro integrante.
+¹ O link `Phgomes05` foi inicialmente informado para Pablo e Clara, mas representa uma única conta. Confirmar o perfil individual da Clara antes de atribuir a ela commits nesse usuário.
+
+**Como registrar a participação:** cada integrante realiza a tarefa com sua própria conta, descreve a alteração no commit ou pull request e informa a data e o resultado para atualizar o [registro de trabalho](docs/REGISTRO_DE_TRABALHO.md). Uma tarefa planejada permanece pendente até haver trabalho realizado ou confirmação verificável.
 
 ## Tecnologias
 
