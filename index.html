@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Quiz acessível sobre fundamentos de desenvolvimento front-end.">
+  <meta name="description" content="Quiz interativo sobre fundamentos de desenvolvimento front-end.">
   <title>TechQuiz | Fundamentos de Front-End</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <a class="atalho-conteudo" href="#conteudo-principal">Ir para o conteúdo</a>
+  <a class="atalho-conteudo" href="#conteudo-principal">Ir para o conteúdo principal</a>
 
   <header class="cabecalho">
     <div class="container marca">
@@ -23,33 +23,35 @@
 
   <main id="conteudo-principal" class="container conteudo">
     <noscript>
-      <p class="aviso">Ative o JavaScript no navegador para responder ao quiz.</p>
+      <p class="aviso">O JavaScript precisa estar ativado no navegador para executar o quiz.</p>
     </noscript>
 
+    <!-- Tela Inicial -->
     <section id="tela-inicial" class="painel" aria-labelledby="titulo-inicio">
       <div class="introducao">
-        <p class="etiqueta">10 perguntas · resultado imediato</p>
-        <h2 id="titulo-inicio">Teste seus conhecimentos de front-end</h2>
-        <p>Responda questões de HTML, CSS, JavaScript, responsividade e acessibilidade. Depois de cada resposta, você verá uma explicação e a fonte usada.</p>
+        <p class="etiqueta">10 perguntas · Feedback instantâneo</p>
+        <h2 id="titulo-inicio">Teste seus conhecimentos em Front-End</h2>
+        <p>Responda a questões sobre HTML, CSS, JavaScript, responsividade e acessibilidade. Cada resposta correta exibe uma explicação detalhada e a fonte de referência.</p>
 
         <form id="form-inicio" class="formulario">
-          <label for="nome-jogador">Qual é o seu nome?</label>
-          <input id="nome-jogador" name="nome" type="text" minlength="2" maxlength="40" autocomplete="name" required>
-          <p id="ajuda-nome" class="texto-apoio">Digite de 2 a 40 caracteres.</p>
-          <button class="botao botao-primario" type="submit">Começar o quiz</button>
+          <label for="nome-jogador">Nome do jogador</label>
+          <input id="nome-jogador" name="nome" type="text" minlength="2" maxlength="40" autocomplete="name" placeholder="Digite seu nome" required>
+          <p id="ajuda-nome" class="texto-apoio">Utilize de 2 a 40 caracteres.</p>
+          <button class="botao botao-primario" type="submit">Iniciar Quiz</button>
         </form>
 
         <p id="erro-carregamento" class="aviso" role="alert" hidden></p>
       </div>
 
       <aside class="ranking" aria-labelledby="titulo-ranking-inicial">
-        <h2 id="titulo-ranking-inicial">Ranking desta sessão</h2>
+        <h2 id="titulo-ranking-inicial">Ranking da Sessão</h2>
         <ol id="ranking-inicial" class="lista-ranking">
-          <li>Nenhuma partida concluída ainda.</li>
+          <li>Nenhuma partida registrada nesta sessão.</li>
         </ol>
       </aside>
     </section>
 
+    <!-- Tela do Quiz -->
     <section id="tela-quiz" class="painel painel-quiz" aria-labelledby="pergunta-titulo" hidden>
       <div class="status-quiz">
         <p id="progresso-texto">Pergunta 1 de 10</p>
@@ -64,25 +66,26 @@
       <div id="feedback" class="feedback" aria-live="polite" aria-atomic="true" hidden>
         <h3 id="feedback-titulo"></h3>
         <p id="feedback-explicacao"></p>
-        <a id="feedback-fonte" href="#" target="_blank" rel="noopener noreferrer">Consultar fonte da resposta</a>
+        <a id="feedback-fonte" href="#" target="_blank" rel="noopener noreferrer">Acessar fonte da explicação</a>
       </div>
 
-      <button id="botao-proxima" class="botao botao-primario" type="button" hidden>Próxima pergunta</button>
+      <button id="botao-proxima" class="botao botao-primario" type="button" hidden>Próxima Pergunta</button>
     </section>
 
+    <!-- Tela de Resultado -->
     <section id="tela-resultado" class="painel resultado" aria-labelledby="titulo-resultado" hidden>
-      <p class="etiqueta">Partida concluída</p>
-      <h2 id="titulo-resultado" tabindex="-1">Seu resultado</h2>
+      <p class="etiqueta">Fim de jogo</p>
+      <h2 id="titulo-resultado" tabindex="-1">Resultado Final</h2>
       <p id="mensagem-resultado" class="placar-final"></p>
       <p id="resumo-resultado"></p>
 
       <div class="acoes-resultado">
-        <button id="jogar-novamente" class="botao botao-primario" type="button">Jogar novamente</button>
-        <button id="trocar-jogador" class="botao botao-secundario" type="button">Trocar jogador</button>
+        <button id="jogar-novamente" class="botao botao-primario" type="button">Jogar Novamente</button>
+        <button id="trocar-jogador" class="botao botao-secundario" type="button">Trocar Jogador</button>
       </div>
 
       <div class="ranking ranking-resultado" aria-labelledby="titulo-ranking-final">
-        <h3 id="titulo-ranking-final">Ranking desta sessão</h3>
+        <h3 id="titulo-ranking-final">Ranking da Sessão</h3>
         <ol id="ranking-final" class="lista-ranking"></ol>
       </div>
     </section>
@@ -90,7 +93,7 @@
 
   <footer class="rodape">
     <div class="container">
-      <p>TechQuiz · Trabalho Final de Desenvolvimento Front-End Para Web · Grupo 05</p>
+      <p>TechQuiz · Trabalho Final de Desenvolvimento Front-End para Web · Grupo 05</p>
     </div>
   </footer>
 

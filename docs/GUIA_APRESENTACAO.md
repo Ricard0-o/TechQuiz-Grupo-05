@@ -6,22 +6,22 @@ O TechQuiz é uma página única que testa fundamentos de front-end. O HTML sepa
 
 ## Fluxo para demonstrar
 
-1. Informar o nome do jogador.
-2. Responder uma pergunta e mostrar que a alternativa correta recebe texto, símbolo e cor.
-3. Abrir o link da fonte da explicação.
-4. Concluir o quiz e mostrar pontuação e ranking.
-5. Jogar novamente e explicar que o ranking usa `sessionStorage`.
-6. Reduzir a janela e mostrar a mudança de duas colunas para uma.
-7. Pressionar `Tab` para demonstrar o foco visível.
+1. Informar o nome do jogador na tela inicial.
+2. Responder a uma pergunta e destacar como a alternativa correta recebe simultaneamente o texto descritivo, o símbolo gráfico e a cor de validação.
+3. Abrir o link integrado da fonte para exibir a explicação detalhada do conceito abordado.
+4. Concluir o quiz para apresentar o painel de pontuação final e a tabela do ranking.
+5. Jogar novamente e esclarecer que a persistência do ranking utiliza o sessionStorage da sessão atual da aba.
+6. Reduzir a largura da janela do navegador para demonstrar a transição responsiva do layout de duas colunas para coluna única.
+7. Pressionar a tecla Tab para evidenciar a gestão correta do foco visível em termos de acessibilidade.
 
 ## Perguntas que podem ser feitas
 
-**Por que não abrir o arquivo diretamente?** Porque o navegador pode bloquear o `fetch` de um arquivo local; um servidor HTTP evita esse problema.
+1. Por que não abrir o arquivo diretamente? Porque abrir o arquivo via protocolo file:// pode fazer com que o navegador bloqueie requisições fetch de arquivos locais por questões de segurança (CORS); o uso de um servidor HTTP local resolve esse problema.
 
-**Onde ficam as respostas corretas?** No campo `correta` de cada objeto em `perguntas.json`, usando o índice da alternativa.
+2. Onde ficam as respostas corretas? No campo correta de cada objeto dentro do arquivo perguntas.json, referenciando o índice numérico da alternativa correspondente.
 
-**Como o ranking funciona?** Ao terminar, o resultado entra em uma lista, é ordenado pela pontuação e salvo no `sessionStorage`.
+3. Como o ranking funciona? Ao concluir o quiz, a pontuação do jogador é inserida em um array, ordenada de forma decrescente e persistida no sessionStorage para durar apenas durante a sessão ativa da aba.
 
-**Como a página é responsiva?** A grade usa duas colunas em telas amplas e media queries mudam para uma coluna em larguras menores.
+4. Como a página é responsiva? A estrutura utiliza layouts flexíveis e de grade (Grid) que se adaptam para duas colunas em telas amplas, recorrendo a media queries para reorganizar o conteúdo em coluna única em telas menores.
 
-**Como a acessibilidade foi considerada?** Foram usados elementos semânticos, botões nativos, foco visível, região `aria-live`, bom contraste e retorno que não depende apenas da cor.
+5. Como a acessibilidade foi considerada? O projeto emprega elementos HTML semânticos, botões nativos, estilos claros de foco visível (Tab), região aria-live para leitores de tela, além de garantir bom contraste de cores e feedbacks visuais que não dependem exclusivamente da cor (como textos e ícones).
