@@ -76,3 +76,5 @@ HTML5, CSS3, JavaScript e JSON, sem frameworks ou bibliotecas.
 ## Versionamento
 
 O projeto usa branches por funcionalidade e mensagens semânticas. A tag `cp1-entrega` identifica o estado preparado para o primeiro checkpoint. As tags dos checkpoints seguintes só devem ser criadas após a validação das respectivas entregas.
+
+++++Branch
