@@ -2,18 +2,24 @@
   --azul-950: #071a33;
   --azul-800: #123f70;
   --azul-600: #1768ac;
-  --ciano-200: #b8f0f3;
+  --azul-500: #1f7ad9;
+  --ciano-200: #d6f7fb;
   --ciano-500: #2ec4c7;
+  --roxo-500: #7a5cff;
+  --roxo-100: #f0ebff;
   --branco: #ffffff;
-  --cinza-50: #f5f8fc;
-  --cinza-200: #d8e1ec;
-  --cinza-700: #34465a;
-  --verde-700: #176b3a;
-  --verde-50: #e9f8ef;
-  --vermelho-700: #a12727;
-  --vermelho-50: #fff0f0;
-  --amarelo-foco: #ffcf33;
-  --sombra: 0 16px 40px rgba(7, 26, 51, 0.12);
+  --cinza-50: #f4f8ff;
+  --cinza-100: #edf3fb;
+  --cinza-200: #dfe9f5;
+  --cinza-700: #394d63;
+  --verde-700: #148356;
+  --verde-50: #ebfff5;
+  --vermelho-700: #b63d3d;
+  --vermelho-50: #fff1f1;
+  --amarelo-foco: #ffd85c;
+  --texto-suave: #4e647d;
+  --sombra: 0 18px 42px rgba(17, 42, 78, 0.15);
+  --sombra-suave: 0 10px 22px rgba(17, 42, 78, 0.08);
   --raio: 18px;
 }
 
@@ -28,8 +34,10 @@ html {
 body {
   margin: 0;
   color: var(--azul-950);
-  background: var(--cinza-50);
-  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(42, 196, 199, 0.18), transparent 26%),
+    linear-gradient(180deg, var(--cinza-50) 0%, #edf5ff 100%);
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   line-height: 1.55;
 }
 
@@ -67,8 +75,10 @@ a:hover {
   left: 12px;
   padding: 10px 14px;
   color: var(--azul-950);
-  background: var(--amarelo-foco);
-  font-weight: 700;
+  background: linear-gradient(135deg, var(--amarelo-foco), #ffe88d);
+  font-weight: 800;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(255, 207, 51, 0.35);
   transform: translateY(-180%);
 }
 
@@ -78,18 +88,26 @@ a:hover {
 
 .cabecalho {
   color: var(--branco);
-  background: linear-gradient(135deg, var(--azul-950), var(--azul-800));
+  background: linear-gradient(135deg, var(--azul-950), var(--azul-800) 42%, var(--roxo-500));
   border-bottom: 5px solid var(--ciano-500);
+  box-shadow: inset 0 -18px 30px rgba(255, 255, 255, 0.04);
 }
 
 .marca {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 18px;
   min-height: 150px;
   padding-block: 24px;
 }
 
+.marca img {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: var(--sombra-suave);
+}
 .marca img {
   flex: 0 0 auto;
 }
@@ -106,9 +124,9 @@ a:hover {
 
 .marca .rotulo,
 .etiqueta {
-  color: var(--azul-800);
-  font-size: 0.82rem;
-  font-weight: 700;
+  color: var(--roxo-500);
+  font-size: 0.76rem;
+  font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -127,10 +145,11 @@ a:hover {
   grid-template-columns: minmax(0, 1.55fr) minmax(260px, 0.75fr);
   gap: 34px;
   padding: clamp(24px, 5vw, 48px);
-  background: var(--branco);
-  border: 1px solid var(--cinza-200);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(122, 92, 255, 0.12);
   border-radius: var(--raio);
   box-shadow: var(--sombra);
+  backdrop-filter: blur(3px);
 }
 
 .painel-quiz,
@@ -161,14 +180,21 @@ a:hover {
   width: min(100%, 460px);
   padding: 13px 14px;
   color: var(--azul-950);
-  background: var(--branco);
-  border: 2px solid var(--cinza-700);
-  border-radius: 9px;
+  background: linear-gradient(180deg, #ffffff 0%, #f6f9ff 100%);
+  border: 1.5px solid rgba(57, 77, 99, 0.2);
+  border-radius: 12px;
+  box-shadow: inset 0 1px 2px rgba(7, 26, 51, 0.03);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.formulario input:focus {
+  border-color: var(--roxo-500);
+  box-shadow: 0 0 0 4px rgba(122, 92, 255, 0.12);
 }
 
 .texto-apoio {
   margin: 0 0 8px;
-  color: var(--cinza-700);
+  color: var(--texto-suave);
   font-size: 0.92rem;
 }
 
@@ -176,33 +202,41 @@ a:hover {
   min-height: 46px;
   padding: 11px 20px;
   border: 2px solid transparent;
-  border-radius: 9px;
-  font-weight: 700;
+  border-radius: 12px;
+  font-weight: 800;
   cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.botao:hover {
+  transform: translateY(-1px);
 }
 
 .botao-primario {
   align-self: flex-start;
   color: var(--branco);
-  background: var(--azul-800);
+  background: linear-gradient(135deg, var(--azul-600), var(--roxo-500));
+  box-shadow: 0 10px 18px rgba(122, 92, 255, 0.22);
 }
 
 .botao-primario:hover {
-  background: var(--azul-600);
+  background: linear-gradient(135deg, var(--azul-500), var(--roxo-500));
 }
 
 .botao-secundario {
   color: var(--azul-800);
-  background: var(--branco);
-  border-color: var(--azul-800);
+  background: linear-gradient(180deg, #ffffff 0%, #f4f8ff 100%);
+  border-color: rgba(18, 63, 112, 0.28);
+  box-shadow: var(--sombra-suave);
 }
 
 .ranking {
   align-self: start;
   padding: 22px;
-  background: #edf7fa;
+  background: linear-gradient(180deg, #edf7fa, #f3fbff);
   border-left: 5px solid var(--ciano-500);
-  border-radius: 12px;
+  border-radius: 14px;
+  box-shadow: inset 0 0 0 1px rgba(46, 196, 199, 0.07);
 }
 
 .ranking h2,
@@ -249,16 +283,19 @@ progress {
   min-height: 64px;
   padding: 14px 16px;
   color: var(--azul-950);
-  background: var(--branco);
+  background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
   border: 2px solid var(--cinza-200);
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: left;
   cursor: pointer;
+  box-shadow: var(--sombra-suave);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .alternativa:hover:not(:disabled) {
   border-color: var(--azul-600);
   background: var(--cinza-50);
+  box-shadow: 0 12px 20px rgba(17, 42, 78, 0.08);
 }
 
 .alternativa:disabled {
@@ -267,13 +304,14 @@ progress {
 }
 
 .alternativa.correta {
-  background: var(--verde-50);
+  background: linear-gradient(180deg, var(--verde-50) 0%, #f2fff8 100%);
   border-color: var(--verde-700);
   font-weight: 700;
+  box-shadow: 0 10px 20px rgba(20, 131, 86, 0.12);
 }
 
 .alternativa.incorreta {
-  background: var(--vermelho-50);
+  background: linear-gradient(180deg, var(--vermelho-50) 0%, #fff7f7 100%);
   border-color: var(--vermelho-700);
   font-weight: 700;
 }
@@ -281,9 +319,10 @@ progress {
 .feedback {
   margin: 20px 0;
   padding: 20px;
-  background: var(--cinza-50);
-  border-left: 5px solid var(--azul-600);
-  border-radius: 10px;
+  background: linear-gradient(180deg, #f7fbff 0%, #eef5ff 100%);
+  border-left: 5px solid var(--roxo-500);
+  border-radius: 12px;
+  box-shadow: var(--sombra-suave);
 }
 
 .feedback h3 {
@@ -301,7 +340,8 @@ progress {
   margin: 22px 0 8px;
   color: var(--azul-800);
   font-size: clamp(2rem, 7vw, 3.5rem);
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.04em;
 }
 
 .acoes-resultado {
@@ -318,7 +358,7 @@ progress {
 .rodape {
   padding-block: 24px;
   color: var(--branco);
-  background: var(--azul-950);
+  background: linear-gradient(135deg, var(--azul-950), #101b3d 68%, #1d2e5d);
   text-align: center;
 }
 
@@ -334,16 +374,34 @@ progress {
   .alternativas {
     grid-template-columns: 1fr;
   }
+
+  .ranking {
+    width: 100%;
+  }
+
+  .formulario input {
+    width: 100%;
+  }
+
+  .status-quiz {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .container {
     width: min(100% - 20px, 1040px);
   }
 
   .marca {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    min-height: 132px;
+    gap: 12px;
+    min-height: auto;
+    padding-block: 18px;
   }
 
   .marca img {
@@ -361,13 +419,47 @@ progress {
     border-radius: 12px;
   }
 
-  .status-quiz {
-    display: block;
+  .botao,
+  .botao-primario,
+  .botao-secundario,
+  .acoes-resultado .botao {
+    width: 100%;
   }
 
-  .acoes-resultado .botao,
-  .botao-primario {
-    width: 100%;
+  .alternativa {
+    min-height: 56px;
+    padding: 12px 14px;
+  }
+
+  .feedback {
+    padding: 16px;
+  }
+
+  .ranking {
+    padding: 16px;
+  }
+
+  .lista-ranking {
+    padding-left: 22px;
+  }
+}
+
+@media (max-width: 360px) {
+  .painel {
+    padding: 18px;
+  }
+
+  .marca h1 {
+    font-size: 2.15rem;
+  }
+
+  .painel h2 {
+    font-size: 1.55rem;
+  }
+
+  .botao {
+    min-height: 44px;
+    padding: 10px 14px;
   }
 }
 
