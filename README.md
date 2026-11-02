@@ -16,6 +16,10 @@ Aplicação web de perguntas e respostas sobre **Fundamentos de Desenvolvimento 
 - opção de jogar novamente ou trocar o jogador;
 - navegação por teclado, foco visível, contraste e layout responsivo.
 
+## Identidade visual
+
+O TechQuiz usa uma linguagem de placar de rodada: papel claro, tinta verde escura e acentos coral e amarelo. A marca vetorial em `img/logo-techquiz.svg` representa as alternativas e a resposta marcada; o mesmo arquivo funciona como ícone da aba do navegador.
+
 ## Como executar
 
 Por usar `fetch`, o projeto deve ser aberto por um servidor HTTP, e não diretamente pelo arquivo.
@@ -32,7 +36,7 @@ TechQuiz-Grupo-05/
 ├── perguntas.json          # Dados das 10 perguntas
 ├── css/estilos.css         # Aparência, estados e responsividade
 ├── js/scripts.js           # Lógica, pontuação e ranking
-├── img/logo-techquiz.svg   # Ícone local do projeto
+├── img/logo-techquiz.svg   # Marca do projeto e favicon
 └── docs/                   # Prompt, guia e registro do trabalho
 ```
 

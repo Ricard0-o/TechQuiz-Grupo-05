@@ -25,6 +25,7 @@ O projeto é um quiz sobre fundamentos de desenvolvimento front-end. O CP2 pede 
 - Primeiro inspecione os arquivos, o histórico Git, o README e a versão já existente.
 - Compare o estado atual com cada requisito e implemente somente lacunas reais.
 - Mantenha HTML semântico, CSS externo, JavaScript nativo e dados JSON.
+- Preserve a identidade do placar de rodada do TechQuiz: papel claro, tinta verde escura, coral e amarelo, linguagem próxima e elementos gráficos ligados a perguntas e pontuação. Evite gradientes decorativos, cartões repetidos, brilhos e textos genéricos de template.
 - Trate erros de carregamento e indisponibilidade de `sessionStorage` sem deixar a interface travada.
 - Não invente participação, nomes, links, testes ou resultados. Registre como pendente aquilo que depender de conferência humana, acesso externo ou validação ainda não feita.
 - Explique as mudanças em português claro e indique os arquivos alterados.

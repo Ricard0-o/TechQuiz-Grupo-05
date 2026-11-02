@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Quiz acessível sobre fundamentos de desenvolvimento front-end.">
-  <title>TechQuiz | Fundamentos de Front-End</title>
+  <meta name="description" content="Uma rodada de perguntas de HTML, CSS, JavaScript e acessibilidade, com explicações e placar da sessão.">
+  <meta name="theme-color" content="#193b34">
+  <title>TechQuiz | Rodada de Front-End</title>
+  <link rel="icon" type="image/svg+xml" href="img/logo-techquiz.svg">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
   <a class="atalho-conteudo" href="#conteudo-principal">Ir para o conteúdo</a>
 
   <header class="cabecalho">
-    <div class="container marca">
-      <img src="img/logo-techquiz.svg" alt="" width="56" height="56">
-      <div>
-        <p class="rotulo">Grupo 05 apresenta</p>
-        <h1>TechQuiz</h1>
-        <p>Fundamentos de Desenvolvimento Front-End</p>
-      </div>
+    <div class="container cabecalho-interno">
+      <a class="marca" href="./" aria-label="TechQuiz — início">
+        <img src="img/logo-techquiz.svg" alt="" width="52" height="52">
+        <span class="marca-nome">TechQuiz</span>
+      </a>
+      <p class="assinatura">Um jogo de perguntas do Grupo 05<br>Desenvolvimento Front-End para Web</p>
     </div>
   </header>
 
@@ -26,27 +27,29 @@
       <p class="aviso">Ative o JavaScript no navegador para responder ao quiz.</p>
     </noscript>
 
-    <section id="tela-inicial" class="painel" aria-labelledby="titulo-inicio">
+    <section id="tela-inicial" class="painel capa-quiz" aria-labelledby="titulo-inicio">
       <div class="introducao">
-        <p class="etiqueta">10 perguntas · resultado imediato</p>
-        <h2 id="titulo-inicio">Teste seus conhecimentos de front-end</h2>
-        <p>Responda questões de HTML, CSS, JavaScript, responsividade e acessibilidade. Depois de cada resposta, você verá uma explicação e a fonte usada.</p>
+        <p class="sobrelinha"><span class="numero-rodada" aria-hidden="true">10</span><span>perguntas numa rodada de front-end</span></p>
+        <h1 id="titulo-inicio">Sabe front-end?<br><span>Então, valendo.</span></h1>
+        <p class="texto-intro">HTML, CSS, JavaScript e acessibilidade. Vale errar: depois de cada resposta, o jogo mostra a explicação e a fonte.</p>
 
         <form id="form-inicio" class="formulario">
-          <label for="nome-jogador">Qual é o seu nome?</label>
-          <input id="nome-jogador" name="nome" type="text" minlength="2" maxlength="40" autocomplete="name" required>
-          <p id="ajuda-nome" class="texto-apoio">Digite de 2 a 40 caracteres.</p>
-          <button class="botao botao-primario" type="submit">Começar o quiz</button>
+          <label for="nome-jogador">Como a gente te chama?</label>
+          <input id="nome-jogador" name="nome" type="text" minlength="2" maxlength="40" autocomplete="name" placeholder="Seu nome" required>
+          <p id="ajuda-nome" class="texto-apoio">De 2 a 40 caracteres.</p>
+          <button class="botao botao-primario" type="submit">Começar a rodada</button>
         </form>
 
         <p id="erro-carregamento" class="aviso" role="alert" hidden></p>
       </div>
 
       <aside class="ranking" aria-labelledby="titulo-ranking-inicial">
-        <h2 id="titulo-ranking-inicial">Ranking desta sessão</h2>
+        <p class="ranking-chamada">Placar da sessão</p>
+        <h2 id="titulo-ranking-inicial">Quem está no topo?</h2>
         <ol id="ranking-inicial" class="lista-ranking">
-          <li>Nenhuma partida concluída ainda.</li>
+          <li>A primeira pontuação é sua.</li>
         </ol>
+        <p class="ranking-nota">O placar fica salvo nesta aba.</p>
       </aside>
     </section>
 
@@ -90,7 +93,7 @@
 
   <footer class="rodape">
     <div class="container">
-      <p>TechQuiz · Trabalho Final de Desenvolvimento Front-End Para Web · Grupo 05</p>
+      <p>TechQuiz · Grupo 05 · Desenvolvimento Front-End para Web</p>
     </div>
   </footer>
 
