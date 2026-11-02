@@ -1,6 +1,7 @@
 "use strict";
 
 const CHAVE_RANKING = "techquiz-ranking";
+const rankingTemporario = [];
 
 const estado = {
   perguntas: [],
@@ -172,9 +173,10 @@ function encerrarQuiz() {
 
 function obterRanking() {
   try {
-    return JSON.parse(sessionStorage.getItem(CHAVE_RANKING)) ?? [];
+    const rankingSalvo = JSON.parse(sessionStorage.getItem(CHAVE_RANKING));
+    return Array.isArray(rankingSalvo) ? rankingSalvo : rankingTemporario;
   } catch {
-    return [];
+    return rankingTemporario;
   }
 }
 
@@ -182,7 +184,15 @@ function salvarRanking(resultado) {
   const ranking = obterRanking();
   ranking.push(resultado);
   ranking.sort((a, b) => b.acertos - a.acertos || a.registradoEm.localeCompare(b.registradoEm));
-  sessionStorage.setItem(CHAVE_RANKING, JSON.stringify(ranking.slice(0, 10)));
+  const melhoresResultados = ranking.slice(0, 10);
+
+  rankingTemporario.splice(0, rankingTemporario.length, ...melhoresResultados);
+
+  try {
+    sessionStorage.setItem(CHAVE_RANKING, JSON.stringify(melhoresResultados));
+  } catch {
+    // O ranking em memória mantém o resultado disponível até o fim desta página.
+  }
 }
 
 function preencherListaRanking(lista, ranking) {

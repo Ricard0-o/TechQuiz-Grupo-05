@@ -16,6 +16,10 @@ Aplicação web de perguntas e respostas sobre **Fundamentos de Desenvolvimento 
 - opção de jogar novamente ou trocar o jogador;
 - navegação por teclado, foco visível, contraste e layout responsivo.
 
+## Identidade visual
+
+O TechQuiz usa uma linguagem de placar de rodada: papel claro, tinta verde escura e acentos coral e amarelo. A marca vetorial em `img/logo-techquiz.svg` representa as alternativas e a resposta marcada; o mesmo arquivo funciona como ícone da aba do navegador.
+
 ## Como executar
 
 Por usar `fetch`, o projeto deve ser aberto por um servidor HTTP, e não diretamente pelo arquivo.
@@ -32,7 +36,7 @@ TechQuiz-Grupo-05/
 ├── perguntas.json          # Dados das 10 perguntas
 ├── css/estilos.css         # Aparência, estados e responsividade
 ├── js/scripts.js           # Lógica, pontuação e ranking
-├── img/logo-techquiz.svg   # Ícone local do projeto
+├── img/logo-techquiz.svg   # Marca do projeto e favicon
 └── docs/                   # Prompt, guia e registro do trabalho
 ```
 
@@ -76,5 +80,9 @@ HTML5, CSS3, JavaScript e JSON, sem frameworks ou bibliotecas.
 ## Versionamento
 
 O projeto usa branches por funcionalidade e mensagens semânticas. A tag `cp1-entrega` identifica o estado preparado para o primeiro checkpoint. As tags dos checkpoints seguintes só devem ser criadas após a validação das respectivas entregas.
+
+## Preparação para o CP2
+
+O fluxo principal solicitado no segundo checkpoint já está implementado. O roteiro de conferência, as pendências de publicação/versionamento e os critérios para concluir a entrega estão em [`docs/PLANO_CP2.md`](docs/PLANO_CP2.md). Um prompt reutilizável para orientar a revisão e futuras alterações está em [`docs/PROMPT_REFINADO.md`](docs/PROMPT_REFINADO.md). A tag `cp2-entrega` e a disponibilidade dos links ainda precisam ser confirmadas após a validação final.
 
 ++++Branch
