@@ -2,91 +2,141 @@
   {
     "id": 1,
     "categoria": "HTML",
-    "pergunta": "Qual elemento semântico representa o conteúdo principal e exclusivo de uma página?",
-    "alternativas": ["<header>", "<main>", "<aside>", "<footer>"],
+    "pergunta": "Qual atributo associa um texto explicativo a uma imagem para leitores de tela?",
+    "alternativas": [
+      "title",
+      "alt",
+      "href",
+      "src"
+    ],
     "correta": 1,
-    "explicacao": "O elemento <main> reúne o conteúdo dominante da página, que está diretamente relacionado ao seu tema central.",
-    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/main"
+    "explicacao": "O atributo alt fornece uma alternativa textual para o conteúdo da imagem. Imagens decorativas normalmente devem usar alt vazio (alt=\"\").",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img"
   },
   {
     "id": 2,
-    "categoria": "CSS",
-    "pergunta": "Qual recurso do CSS organiza elementos em linhas e colunas ao mesmo tempo?",
-    "alternativas": ["CSS Grid", "Float", "Position fixed", "Text align"],
-    "correta": 0,
-    "explicacao": "CSS Grid é um sistema bidimensional: ele controla linhas e colunas para montar layouts.",
-    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guides/Grid_layout"
+    "categoria": "HTML",
+    "pergunta": "Qual elemento HTML representa um link para outra página ou recurso?",
+    "alternativas": [
+      "<link> dentro do body",
+      "<a>",
+      "<navitem>",
+      "<url>"
+    ],
+    "correta": 1,
+    "explicacao": "O elemento a cria um hyperlink quando recebe um atributo href com o destino.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a"
   },
   {
     "id": 3,
     "categoria": "CSS",
-    "pergunta": "Em qual situação Flexbox costuma ser mais indicado?",
-    "alternativas": ["Editar imagens", "Validar formulários", "Alinhar itens em uma dimensão", "Armazenar dados"],
+    "pergunta": "Qual propriedade CSS altera a cor do texto de um elemento?",
+    "alternativas": [
+      "font-style",
+      "background-color",
+      "color",
+      "text-decoration"
+    ],
     "correta": 2,
-    "explicacao": "Flexbox foi pensado para distribuir e alinhar itens principalmente em uma dimensão: linha ou coluna.",
-    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guides/Flexible_box_layout"
+    "explicacao": "A propriedade color define a cor do conteúdo textual de um elemento; background-color controla o fundo.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/CSS/color"
   },
   {
     "id": 4,
-    "categoria": "JavaScript",
-    "pergunta": "Para que a função fetch() é usada neste projeto?",
-    "alternativas": ["Colorir botões", "Buscar o arquivo de perguntas", "Criar o rodapé", "Definir a fonte do texto"],
+    "categoria": "CSS",
+    "pergunta": "Qual unidade é relativa ao tamanho da fonte do elemento raiz do documento?",
+    "alternativas": [
+      "px",
+      "rem",
+      "vh",
+      "% sempre relativo à raiz"
+    ],
     "correta": 1,
-    "explicacao": "A Fetch API faz uma requisição e permite carregar recursos, como o arquivo perguntas.json.",
-    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch"
+    "explicacao": "A unidade rem é calculada com base no tamanho da fonte do elemento raiz, normalmente o html.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/CSS/length"
   },
   {
     "id": 5,
     "categoria": "JavaScript",
-    "pergunta": "O que acontece com os dados salvos no sessionStorage?",
-    "alternativas": ["São públicos na internet", "Ficam no servidor para sempre", "Duram durante a sessão da aba", "Viraram um arquivo CSS"],
-    "correta": 2,
-    "explicacao": "O sessionStorage guarda dados para a sessão da página e os separa por aba do navegador.",
-    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/API/Window/sessionStorage"
+    "pergunta": "Qual palavra-chave declara uma variável cujo valor pode ser reatribuído no mesmo escopo?",
+    "alternativas": [
+      "const",
+      "let",
+      "static",
+      "define"
+    ],
+    "correta": 1,
+    "explicacao": "let declara uma variável de escopo de bloco que pode receber um novo valor. const impede a reatribuição da variável.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/let"
   },
   {
     "id": 6,
     "categoria": "JavaScript",
-    "pergunta": "Qual é a função de addEventListener() em uma página?",
-    "alternativas": ["Observar eventos e executar uma função", "Criar uma planilha", "Compactar imagens", "Esconder o HTML do navegador"],
+    "pergunta": "Qual método transforma uma string JSON válida em um valor JavaScript?",
+    "alternativas": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.open()",
+      "JSON.convert()"
+    ],
     "correta": 0,
-    "explicacao": "addEventListener() registra uma função que será executada quando um evento, como clique ou envio de formulário, acontecer.",
-    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener"
+    "explicacao": "JSON.parse() interpreta uma string JSON e cria o valor JavaScript correspondente. JSON.stringify() faz o caminho inverso.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
   },
   {
     "id": 7,
     "categoria": "Acessibilidade",
-    "pergunta": "Por que o foco visível é importante para a acessibilidade?",
-    "alternativas": ["Aumenta a velocidade da internet", "Mostra onde o usuário do teclado está", "Troca o idioma do site", "Salva o ranking"],
+    "pergunta": "Qual atributo HTML associa um rótulo a um campo de formulário?",
+    "alternativas": [
+      "name do label igual ao id",
+      "for do label igual ao id do campo",
+      "alt do input igual ao name",
+      "role do formulário igual ao id"
+    ],
     "correta": 1,
-    "explicacao": "O indicador de foco permite que pessoas que navegam por teclado saibam qual componente receberá a próxima ação.",
-    "fonte": "https://www.w3.org/WAI/WCAG22/Understanding/focus-visible"
+    "explicacao": "O atributo for do elemento label deve corresponder ao id do controle. Isso melhora a identificação do campo e permite clicar no rótulo para focá-lo.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/label"
   },
   {
     "id": 8,
     "categoria": "Responsividade",
-    "pergunta": "Qual mecanismo aplica estilos de acordo com características como a largura da tela?",
-    "alternativas": ["Comentários HTML", "Media queries", "sessionStorage", "Atributo alt"],
-    "correta": 1,
-    "explicacao": "Media queries permitem aplicar regras CSS quando condições do dispositivo ou da janela são atendidas.",
-    "fonte": "https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/CSS_layout/Responsive_Design"
+    "pergunta": "Qual meta tag ajuda a página a usar a largura real do dispositivo móvel?",
+    "alternativas": [
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "<meta name=\"mobile\" content=\"true\">",
+      "<meta charset=\"responsive\">",
+      "<meta name=\"screen\" content=\"auto\">"
+    ],
+    "correta": 0,
+    "explicacao": "A configuração viewport define a largura do layout como a largura do dispositivo e estabelece a escala inicial, ajudando no comportamento responsivo.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Viewport_meta_tag"
   },
   {
     "id": 9,
-    "categoria": "JSON",
-    "pergunta": "Qual alternativa descreve corretamente um arquivo JSON?",
-    "alternativas": ["Um formato textual para representar dados", "Uma linguagem que substitui o HTML", "Um editor de imagens", "Uma regra de acessibilidade"],
-    "correta": 0,
-    "explicacao": "JSON é um formato de texto usado para representar dados estruturados por meio de objetos e listas.",
-    "fonte": "https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/JSON"
+    "categoria": "DOM",
+    "pergunta": "Qual evento é normalmente disparado quando o usuário envia um formulário HTML?",
+    "alternativas": [
+      "change",
+      "mouseover",
+      "submit",
+      "loadform"
+    ],
+    "correta": 2,
+    "explicacao": "O evento submit ocorre quando o formulário é enviado. Ele pode ser tratado para validar dados ou controlar o envio com preventDefault().",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/API/HTMLFormElement/submit_event"
   },
   {
     "id": 10,
-    "categoria": "DOM",
-    "pergunta": "O que document.querySelector() retorna quando encontra correspondência?",
-    "alternativas": ["Todos os arquivos do site", "A primeira página do navegador", "O primeiro elemento que combina com o seletor", "Uma nova aba"],
+    "categoria": "Boas práticas",
+    "pergunta": "Por que é importante usar elementos HTML semânticos, como <header>, <main> e <footer>?",
+    "alternativas": [
+      "Eles executam JavaScript automaticamente",
+      "Eles substituem todas as regras CSS",
+      "Eles descrevem melhor a estrutura e o significado do conteúdo",
+      "Eles tornam o site sempre mais rápido"
+    ],
     "correta": 2,
-    "explicacao": "querySelector() retorna o primeiro elemento do documento que corresponde ao seletor CSS informado.",
-    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/API/Document/querySelector"
+    "explicacao": "Elementos semânticos dão significado à estrutura da página, favorecendo manutenção, compreensão do código e tecnologias assistivas.",
+    "fonte": "https://developer.mozilla.org/pt-BR/docs/Glossary/Semantics"
   }
 ]

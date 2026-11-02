@@ -48,17 +48,21 @@ TechQuiz-Grupo-05/
 4. Ao final, confira a pontuação e o ranking da sessão.
 5. O ranking permanece enquanto a aba do navegador estiver aberta.
 
-## Integrantes e responsabilidades
+## Integrantes e divisão de tarefas
 
-| Integrante | Responsabilidade registrada |
-| --- | --- |
-| Ricardo Nelber Nascimento Junior | Coordenação, análise dos requisitos, implementação de HTML, CSS, JavaScript e JSON, integração, testes e documentação. |
-| Daniel Ares Gontijo Pinto | Revisão de conteúdo e apoio à apresentação — participação a confirmar pelo integrante. |
-| Ricardo Oliveira da Silva | Teste responsivo em diferentes telas — participação a confirmar pelo integrante. |
-| Clara Puerta Lopes da Purificação | Revisão de acessibilidade e navegação por teclado — participação a confirmar pela integrante. |
-| Pablo Henrique Silva Gomes | Revisão das perguntas e validação final — participação a confirmar pelo integrante. |
+A implementação inicial foi registrada em commits de Ricardo. As tarefas abaixo ampliam a participação do grupo a partir desta etapa; cada integrante deve realizar e registrar sua própria contribuição.
 
-O histórico Git registra apenas o trabalho efetivamente realizado. Não foram criados commits em nome de outras pessoas.
+| Integrante | GitHub informado | Trabalho registrado até agora | Próximas tarefas e entrega verificável |
+| --- | --- | --- | --- |
+| Ricardo Nelber Nascimento Junior | [Ricard0-o](https://github.com/Ricard0-o) | Requisitos, estrutura, interface, perguntas iniciais, lógica, testes e documentação conforme o [registro](docs/REGISTRO_DE_TRABALHO.md) e o histórico Git. | Integrar as contribuições, corrigir problemas apontados pelo grupo, validar a publicação e preparar o documento Word técnico previsto no projeto. |
+| Daniel Ares Gontijo Pinto | [danielareses0806](https://github.com/danielareses0806) | Sem atividade concluída registrada. | Revisar clareza e precisão dos textos da introdução e explicações; atualizar `index.html` e/ou `perguntas.json` quando necessário; desenvolver sua parte do roteiro em `docs/GUIA_APRESENTACAO.md`. Entregar alterações ou apontamentos concretos. |
+| Ricardo Oliveira da Silva | [ro213377-sys](https://github.com/ro213377-sys) | Sem atividade concluída registrada. | Testar o layout em celular, tablet e computador; corrigir no `css/estilos.css` problemas de largura, legibilidade e disposição; documentar dispositivos, larguras, resultados e correções em `docs/RELATORIO_TESTES.md`. |
+| Clara Puerta Lopes da Purificação | [Phgomes05](https://github.com/Phgomes05)¹ | Sem atividade concluída registrada. | Testar navegação por teclado e leitor de tela, foco, nomes acessíveis e retorno das respostas; propor ou implementar ajustes em `index.html`, `css/estilos.css` e `js/scripts.js`; acrescentar checklist e resultados ao relatório de testes. |
+| Pablo Henrique Silva Gomes | [Phgomes05](https://github.com/Phgomes05)¹ | Sem atividade concluída registrada. | Revisar as dez perguntas, alternativas, respostas, explicações e links em `perguntas.json`; corrigir inconsistências; testar fluxos de acerto, erro, reinício e ranking; registrar casos e resultados em `docs/RELATORIO_TESTES.md`. |
+
+¹ Clara e Pablo usam o mesmo perfil GitHub, `Phgomes05`. Para distinguir a participação de cada um, registrar o responsável real por cada tarefa; o perfil compartilhado não identifica sozinho a autoria individual.
+
+**Como registrar a participação:** cada integrante realiza a tarefa com sua própria conta, descreve a alteração no commit ou pull request e informa a data e o resultado para atualizar o [registro de trabalho](docs/REGISTRO_DE_TRABALHO.md). Uma tarefa planejada permanece pendente até haver trabalho realizado ou confirmação verificável.
 
 ## Tecnologias
 
@@ -80,3 +84,5 @@ O projeto usa branches por funcionalidade e mensagens semânticas. A tag `cp1-en
 ## Preparação para o CP2
 
 O fluxo principal solicitado no segundo checkpoint já está implementado. O roteiro de conferência, as pendências de publicação/versionamento e os critérios para concluir a entrega estão em [`docs/PLANO_CP2.md`](docs/PLANO_CP2.md). Um prompt reutilizável para orientar a revisão e futuras alterações está em [`docs/PROMPT_REFINADO.md`](docs/PROMPT_REFINADO.md). A tag `cp2-entrega` e a disponibilidade dos links ainda precisam ser confirmadas após a validação final.
+
+++++Branch
