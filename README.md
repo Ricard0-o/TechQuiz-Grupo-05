@@ -72,3 +72,7 @@ HTML5, CSS3, JavaScript e JSON, sem frameworks ou bibliotecas.
 ## Versionamento
 
 O projeto usa branches por funcionalidade e mensagens semânticas. A tag `cp1-entrega` identifica o estado preparado para o primeiro checkpoint. As tags dos checkpoints seguintes só devem ser criadas após a validação das respectivas entregas.
+
+## Preparação para o CP2
+
+O fluxo principal solicitado no segundo checkpoint já está implementado. O roteiro de conferência, as pendências de publicação/versionamento e os critérios para concluir a entrega estão em [`docs/PLANO_CP2.md`](docs/PLANO_CP2.md). Um prompt reutilizável para orientar a revisão e futuras alterações está em [`docs/PROMPT_REFINADO.md`](docs/PROMPT_REFINADO.md). A tag `cp2-entrega` e a disponibilidade dos links ainda precisam ser confirmadas após a validação final.
