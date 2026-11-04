@@ -25,3 +25,16 @@ O TechQuiz é uma página única que testa fundamentos de front-end. O HTML sepa
 4. Como a página é responsiva? A estrutura utiliza layouts flexíveis e de grade (Grid) que se adaptam para duas colunas em telas amplas, recorrendo a media queries para reorganizar o conteúdo em coluna única em telas menores.
 
 5. Como a acessibilidade foi considerada? O projeto emprega elementos HTML semânticos, botões nativos, estilos claros de foco visível (Tab), região aria-live para leitores de tela, além de garantir bom contraste de cores e feedbacks visuais que não dependem exclusivamente da cor (como textos e ícones).
+
+
+## CP3 — sequência de 5 a 7 minutos (proposta para o grupo)
+
+1. **Objetivo e estrutura (1 min):** abrir o site HTTPS e explicar o tema; mostrar index.html, CSS, scripts.js e perguntas.json. Informar que não há backend.
+2. **Demonstração (2 min):** iniciar com um nome, responder uma certa e uma errada, ler explicação e abrir a fonte; concluir a rodada para mostrar o resultado.
+3. **Ranking (1 min):** mostrar sessionStorage, recarregar e comparar o placar. Explicar a duração por aba e o fallback em memória se o navegador bloquear storage.
+4. **Acessibilidade e responsividade (1 min):** navegar com Tab e Enter, mostrar foco, rótulo e retorno textual; reduzir a tela e verificar ausência de rolagem horizontal.
+5. **Decisões e fechamento (1 min):** mostrar tag cp3-entrega, relatar correção de contraste e fontes 404 e explicar por que dados e código ficam separados.
+
+Antes da aula: abrir site e repositório na tag, testar internet e ensaiar. Distribuir as falas entre os integrantes com base no que cada um efetivamente fez; não apresentar tarefas planejadas como concluídas.
+
+Perguntas adicionais: por que amarelo no botão? O coral com texto verde não atingia o contraste mínimo para texto pequeno. Por que validar o JSON? Para impedir uma partida incompleta ou com índice inválido. Por que um logo com alt vazio? O link já tem nome acessível; repetir o nome no ícone seria redundante.

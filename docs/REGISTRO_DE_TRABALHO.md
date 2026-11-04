@@ -32,3 +32,8 @@ Este documento registra atividades realmente executadas. Participações futuras
 ## Critério de atualização
 
 As linhas pendentes representam tarefas distribuídas, não atividades comprovadamente executadas. Ao concluir cada uma, registrar a data, o resultado concreto (por exemplo, checklist, relatório ou alteração) e atualizar a situação. O histórico de commits deve usar a identidade da pessoa que fez a alteração.
+
+
+## 04/11/2026 — consolidação CP3
+
+Revisão solicitada por Ricardo e executada com auxílio do Codex: plano antes das alterações, correções de contraste/validação/acessibilidade, fontes das questões 4 e 8, documentação e testes reais descritos em RELATORIO_CP3.md. As tarefas dos demais integrantes não foram marcadas como realizadas por esta revisão.

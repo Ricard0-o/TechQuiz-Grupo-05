@@ -52,7 +52,22 @@ async function carregarPerguntas() {
       throw new Error("O arquivo precisa conter pelo menos 10 perguntas.");
     }
 
+    const ids = new Set();
+    perguntas.forEach((pergunta) => {
+      const textos = [pergunta?.categoria, pergunta?.pergunta, pergunta?.explicacao];
+      if (!pergunta || ids.has(pergunta.id) || !Number.isInteger(pergunta.id) ||
+          !textos.every((texto) => typeof texto === "string" && texto.trim()) ||
+          !Array.isArray(pergunta.alternativas) || pergunta.alternativas.length !== 4 ||
+          !pergunta.alternativas.every((texto) => typeof texto === "string" && texto.trim()) ||
+          !Number.isInteger(pergunta.correta) || pergunta.correta < 0 || pergunta.correta > 3 ||
+          typeof pergunta.fonte !== "string" || !pergunta.fonte.startsWith("https://")) {
+        throw new Error("Pergunta com formato inválido.");
+      }
+      ids.add(pergunta.id);
+    });
+
     estado.perguntas = perguntas;
+    elementos.formInicio.querySelector("button").disabled = false;
   } catch (erro) {
     elementos.erroCarregamento.textContent = "Não foi possível carregar as perguntas. Abra o projeto por um servidor local e tente novamente.";
     elementos.erroCarregamento.hidden = false;
@@ -174,7 +189,12 @@ function encerrarQuiz() {
 function obterRanking() {
   try {
     const rankingSalvo = JSON.parse(sessionStorage.getItem(CHAVE_RANKING));
-    return Array.isArray(rankingSalvo) ? rankingSalvo : rankingTemporario;
+    return Array.isArray(rankingSalvo) ? rankingSalvo.filter((item) =>
+      item && typeof item.nome === "string" &&
+      Number.isInteger(item.acertos) && Number.isInteger(item.total) &&
+      item.total >= 10 && item.acertos >= 0 && item.acertos <= item.total &&
+      typeof item.registradoEm === "string" && !Number.isNaN(Date.parse(item.registradoEm))
+    ).slice(0, 10) : rankingTemporario;
   } catch {
     return rankingTemporario;
   }
@@ -221,10 +241,15 @@ function renderizarRanking() {
 elementos.formInicio.addEventListener("submit", (evento) => {
   evento.preventDefault();
 
+  const nome = elementos.nomeJogador.value.trim();
+  elementos.nomeJogador.setCustomValidity(nome.length < 2 ? "Informe pelo menos dois caracteres além dos espaços." : "");
+
   if (elementos.formInicio.reportValidity() && estado.perguntas.length >= 10) {
-    iniciarQuiz(elementos.nomeJogador.value);
+    iniciarQuiz(nome);
   }
 });
+
+elementos.nomeJogador.addEventListener("input", () => elementos.nomeJogador.setCustomValidity(""));
 
 elementos.botaoProxima.addEventListener("click", avancarQuiz);
 

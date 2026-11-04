@@ -46,7 +46,7 @@ TechQuiz-Grupo-05/
 2. Selecione uma alternativa em cada pergunta.
 3. Leia o retorno, a explicação e a fonte antes de avançar.
 4. Ao final, confira a pontuação e o ranking da sessão.
-5. O ranking permanece enquanto a aba do navegador estiver aberta.
+5. O ranking permanece durante a sessão da aba, inclusive ao recarregar; fechá-la encerra essa sessão (navegadores podem restaurá-la).
 
 ## Integrantes e divisão de tarefas
 
@@ -81,8 +81,19 @@ HTML5, CSS3, JavaScript e JSON, sem frameworks ou bibliotecas.
 
 O projeto usa branches por funcionalidade e mensagens semânticas. A tag `cp1-entrega` identifica o estado preparado para o primeiro checkpoint. As tags dos checkpoints seguintes só devem ser criadas após a validação das respectivas entregas.
 
-## Preparação para o CP2
+## Entrega CP3
 
-O fluxo principal solicitado no segundo checkpoint já está implementado. O roteiro de conferência, as pendências de publicação/versionamento e os critérios para concluir a entrega estão em [`docs/PLANO_CP2.md`](docs/PLANO_CP2.md). Um prompt reutilizável para orientar a revisão e futuras alterações está em [`docs/PROMPT_REFINADO.md`](docs/PROMPT_REFINADO.md). A tag `cp2-entrega` e a disponibilidade dos links ainda precisam ser confirmadas após a validação final.
+A versão final é identificada pela tag [`cp3-entrega`](https://github.com/Ricard0-o/TechQuiz-Grupo-05/tree/cp3-entrega). O site usa HTTPS: https://ricard0-o.github.io/TechQuiz-Grupo-05/.
 
-++++Branch
+- Cada acerto vale um ponto; erro vale zero. Não há penalidade nem cronômetro.
+- A ordem das dez perguntas e das alternativas é fixa.
+- Uma pergunta aceita uma resposta; a correta, a explicação e a fonte aparecem antes do avanço.
+- O ranking guarda as dez melhores partidas na sessão da aba, em ordem de acertos. Em empate, a partida mais antiga aparece primeiro.
+- Se o navegador impedir sessionStorage, o ranking fica apenas em memória e se perde ao recarregar.
+- Os nomes são exibidos como texto, sem interpretar HTML.
+
+O [plano e pedido refinado](docs/PLANO_CP3.md), o [relatório de validação do CP3](docs/RELATORIO_CP3.md) e o [roteiro da apresentação](docs/GUIA_APRESENTACAO.md) acompanham esta entrega. A apresentação presencial na Aula 13 e o envio final no Blackboard são realizados pelos alunos.
+
+## Limites da validação
+
+Validação funcional em Chrome no Windows, com larguras de viewport simuladas. Não foi realizado teste auditivo com leitor de tela nem teste em dispositivo físico. As marcações acessíveis, o foco por teclado e o contraste foram conferidos; isso não equivale a uma certificação completa WCAG.

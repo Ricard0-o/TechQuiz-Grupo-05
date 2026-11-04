@@ -53,7 +53,7 @@
     ],
     "correta": 1,
     "explicacao": "A unidade rem é calculada com base no tamanho da fonte do elemento raiz, normalmente o html.",
-    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/CSS/length"
+    "fonte": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length"
   },
   {
     "id": 5,
@@ -109,7 +109,7 @@
     ],
     "correta": 0,
     "explicacao": "A configuração viewport define a largura do layout como a largura do dispositivo e estabelece a escala inicial, ajudando no comportamento responsivo.",
-    "fonte": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Viewport_meta_tag"
+    "fonte": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design"
   },
   {
     "id": 9,

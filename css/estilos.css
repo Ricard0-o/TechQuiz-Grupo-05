@@ -244,13 +244,13 @@ a:hover {
 .botao-primario {
   align-self: start;
   color: var(--tinta);
-  background: var(--coral);
+  background: var(--sol);
   box-shadow: 4px 4px 0 var(--tinta);
 }
 
 .botao-primario:hover {
   color: var(--tinta);
-  background: var(--sol);
+  background: #f8e7a7;
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0 var(--tinta);
 }
@@ -302,6 +302,7 @@ a:hover {
 .lista-ranking li {
   padding-left: 5px;
   color: var(--folha);
+  overflow-wrap: anywhere;
 }
 
 .lista-ranking li::marker {

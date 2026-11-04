@@ -22,7 +22,7 @@
     </div>
   </header>
 
-  <main id="conteudo-principal" class="container conteudo">
+  <main id="conteudo-principal" class="container conteudo" tabindex="-1">
     <noscript>
       <p class="aviso">Ative o JavaScript no navegador para responder ao quiz.</p>
     </noscript>
@@ -35,9 +35,9 @@
 
         <form id="form-inicio" class="formulario">
           <label for="nome-jogador">Como a gente te chama?</label>
-          <input id="nome-jogador" name="nome" type="text" minlength="2" maxlength="40" autocomplete="name" placeholder="Seu nome" required>
+          <input id="nome-jogador" name="nome" type="text" minlength="2" maxlength="40" autocomplete="name" placeholder="Seu nome" aria-describedby="ajuda-nome" required>
           <p id="ajuda-nome" class="texto-apoio">De 2 a 40 caracteres.</p>
-          <button class="botao botao-primario" type="submit">Começar a rodada</button>
+          <button class="botao botao-primario" type="submit" disabled>Começar a rodada</button>
         </form>
 
         <p id="erro-carregamento" class="aviso" role="alert" hidden></p>
@@ -58,7 +58,7 @@
         <p id="progresso-texto">Pergunta 1 de 10</p>
         <p id="pontuacao-atual">Acertos: 0</p>
       </div>
-      <progress id="barra-progresso" value="1" max="10">1 de 10</progress>
+      <progress id="barra-progresso" value="1" max="10" aria-label="Progresso das perguntas">1 de 10</progress>
 
       <p id="categoria-pergunta" class="etiqueta"></p>
       <h2 id="pergunta-titulo" tabindex="-1"></h2>
